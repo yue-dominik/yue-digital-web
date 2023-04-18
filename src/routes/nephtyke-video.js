@@ -1,6 +1,6 @@
 import * as React from 'react';
 
 export const NephtykeVideo = () =>{
-    return <div>Nephtyke Video</div>
+    return <div className='page-content'>Nephtyke Video</div>
 }
 

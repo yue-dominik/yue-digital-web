@@ -1,3 +1,20 @@
+body {
+    /* fallback for old browsers */
+    background: #0f100f;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom, rgba(15,16,15,1), rgba(77,86,91,1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, rgba(15,16,15,1), rgba(77,86,91,1));
+
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -9000;
+}
+
 .App {
   text-align: center;
 }
@@ -37,26 +54,30 @@
     text-decoration: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.page-content {
+    margin: 0 auto;
+    max-width: 756px;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 24px 0 8px;
+}
+.info-text {
+    font-size: 16psx;
+    color: white;
+    padding: 24px 0 8px;
 }
