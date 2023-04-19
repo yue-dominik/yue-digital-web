@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { InfoSection  } from '../components/info-section';
 export const Nephtyke = () =>{
     return (
         <div className='page-content'>
@@ -21,15 +21,6 @@ export const Nephtyke = () =>{
             <InfoSection title={"Story"}>
                 Nephtykes story follows Sorel, a young Tectodian who made a promise to his deceased mother that he would protect their village in her stead. He continues to guard his village for years from the assaults from the neighboring Tectos Kingdom, but one day, a grander duty falls upon Sorel as a mysterious group of mercenaries attempts to kidnap one of the villagers.
             </InfoSection>
-        </div>
-    )
-}
-
-const InfoSection = ({title, children})=> {
-    return (
-        <div className='info-section'>
-            <div className='info-title'>{title}</div>
-            <div className='info-text'>{children}</div>
         </div>
     )
 }
