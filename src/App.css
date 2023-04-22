@@ -34,6 +34,8 @@ height: 100vh;
 
     display: flex;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -42,6 +44,12 @@ height: 100vh;
     margin-right: 8px;
 }
 
+.locale-selector {
+    cursor: pointer;
+    width: 64px;
+    height: 28px;
+    margin-left: auto;
+}
 .navbar-link {
     font-size: 28px;
     font-weight: bold;
